@@ -1,6 +1,8 @@
 @font-face {
     font-family: "vazir";
     src: url(fonts/Vazir-Medium-FD.ttf);
+    font-family:"EduTASBeginner";
+    src: url(fonts/EduTASBeginner-Medium.ttf);
 }
 
 *{
@@ -50,6 +52,8 @@ a:hover{
 
 }
 .logo{
+    font-family: "EduTASBeginner";
+    color:rgba(82, 82, 82, 0.8) ;
     font-size: 1.8rem;
 }
 .logo:hover{
@@ -142,3 +146,105 @@ section{
     display: flex;
 }
 
+/* profile section */
+
+#profile{
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section__pic-container{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+}
+.section__pic-container img{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: flow 2s ease-in-out infinite alternate;
+}
+.section__pic-container-about{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+}
+.section__pic-container-about img{
+
+    border-radius: 100%;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+.section__text__p1{
+    text-align: center;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* icons */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* buttons */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.7rem;
+    width: 7rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1 , .btn-color-2{
+
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+
+}
+
+.btn-color-1 , .btn-color-2:hover{
+
+    background: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+}
+.btn-color-2{
+    background: none;
+}
+.btn-color-2:hover{
+    border: rgb(255,255,255) 0.1rem solid
+}
+.btn-container{
+    gap: 1rem;
+}

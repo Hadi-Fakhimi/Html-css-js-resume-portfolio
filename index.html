@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>هادی فخیمی-رزومه</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyframe.css">
     <link rel="stylesheet" href="mediaQueries.css">
 </head>
 <body>
 <nav id="desktop-nav">
-    <div class="logo">هادی فخیمی</div>
+    <div class="logo" >Hadi Fakhimi</div>
     <div>
         <ul class="nav-links">
             <li><a href="#about">درباره من</a></li>
@@ -19,7 +20,7 @@
     </div>
 </nav>
 <nav id="hamburger-nav">
-    <div class="logo">هادی فخیمی</div>
+    <div class="logo">Hadi Fakhimi</div>
     <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -41,19 +42,42 @@
     </div>
     <div class="section__text">
         <p class="section__text__p1">سلام من<h1 class="title">هادی فخیمی هستم</h1></p>
-        <p class="section__text_p2">Full Stack Developer</p>
+        <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
             دانلود رزومه</button>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"> تماس</button>
+            </div>
         </div>
-        <div class="btn-container">
-            <button class="btn btn-color-1" onclick="location.href='./#contact'"> تماس</button>
-        </div>
+
         <div id="socials-container">
             <img src="./assets/linkedin.png" alt="آدرس لینکدین من" class="icon" onclick="location.href='https://linkdin.com'">
             <img src="./assets/github.png" alt="آدرس گیت هاب من" class="icon" onclick="location.href='https://github.com/hadi-fakhimi'">
-            <img src="./assets/logo-instagram-2443.png" alt="آدرس لینکدین من" class="icon" onclick="location.href='https://linkdin.com'">
+            <img src="./assets/logo-instagram-2443.png" alt="آدرس اینستاگرام من" class="icon" onclick="location.href='Https://instagram.com/hadifakhimi.hf'">
+            <img src="./assets/telegram-png-21801.png" alt="آیدی تلگرام من" class="icon" onclick="location.href='Https://t.me/@Hadifakhimi79'">
 
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">:) بیشتر در مورد من بدون</p>
+    <h1 class="title">درباره من</h1>
+    <div class="section-container">
+
+        <div class="section__pic-container-about">
+            <img class="about-pic" src="./assets/about.jpg" alt="پروفایل">
+        </div>
+        <div class="abuot-details-container">
+
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="تجربه" class="icon">
+                    <h3>تجربه</h3>
+                    <p>+2 years<br>Full Stack Development</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
