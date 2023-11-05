@@ -1,8 +1,14 @@
 @font-face {
     font-family: "vazir";
     src: url(fonts/Vazir-Medium-FD.ttf);
+}
+@font-face {
     font-family:"EduTASBeginner";
     src: url(fonts/EduTASBeginner-Medium.ttf);
+}
+@font-face {
+    font-family:"shabnam";
+    src: url(fonts/Shabnam-Light-FD.ttf);
 }
 
 *{
@@ -21,7 +27,7 @@ p{
 
 }
 a,.btn{
-    transition: all 300ms ease;
+    transition: all 400ms ease;
 }
 /* desktop nav */
 
@@ -81,7 +87,7 @@ a:hover{
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links{
@@ -92,7 +98,7 @@ a:hover{
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menu-links{
 
@@ -173,7 +179,7 @@ section{
 }
 .section__pic-container-about img{
 
-    border-radius: 100%;
+    border-radius: 6rem;
 }
 .section__text{
     align-self: center;
@@ -247,4 +253,59 @@ section{
 }
 .btn-container{
     gap: 1rem;
+}
+/* about section */
+
+#about {
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers, .about-details-container {
+
+    display: flex;
+}
+.about-pic{
+    border-radius: 2rem;
+}
+.arrow{
+    position: absolute;
+
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid ;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.details-container:hover{
+
+    background-color: rgba(114, 114, 114, 0.5);
+
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+.section-container{
+
+    gap: 4rem;
+    height: 80%;
+
+}
+.text-container > p{
+
+    font-family:"shabnam" ;
+    font-weight: 300;
 }
