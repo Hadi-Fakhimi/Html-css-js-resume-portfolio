@@ -293,10 +293,9 @@ section{
 }
 .details-container:hover{
 
-    background-color: rgba(114, 114, 114, 0.5);
+    background-color: rgba(212, 212, 212, 0.5);
 
     transition: all 0.4s ease-in-out;
-    color: white;
 }
 .section-container{
 
@@ -308,4 +307,36 @@ section{
 
     font-family:"shabnam" ;
     font-weight: 300;
+}
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+article .icon{
+    cursor: default;
 }
