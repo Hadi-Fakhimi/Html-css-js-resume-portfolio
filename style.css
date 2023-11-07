@@ -340,3 +340,7 @@ article{
 article .icon{
     cursor: default;
 }
+.article-container article div{
+
+    direction: rtl;
+}
