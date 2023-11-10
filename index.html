@@ -10,35 +10,29 @@
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<nav id="desktop-nav">
-    <div class="logo" >Hadi Fakhimi</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">درباره من</a></li>
-            <li><a href="#experience">رزومه</a></li>
-            <li><a href="#projects">نمونه کار</a></li>
-            <li><a href="#contact">تماس با من</a></li>
-        </ul>
-    </div>
-</nav>
-<nav id="hamburger-nav">
-    <div class="logo">Hadi Fakhimi</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">درباره من</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">رزومه</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">نمونه کار</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">تماس با من</a></li>
-        </div>
-    </div>
-</nav>
+    <header class="header">
+
+        <div class="logo" >Hadi Fakhimi</div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            
+                <a href="#profile" class="active">خانه</a>
+                <a href="#about">درباره من</a>
+                <a href="#experience">رزومه</a>
+                <a href="#projects">نمونه کار</a>
+                <a href="#contact">تماس با من</a>
+                <img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="dark-mode-icon">
+                <span class="active-nav"></span>
+        </nav>
+    </header>
+    <!-- navbar -->
+
+
+   
+    <!-- endNavbar -->
 
 <section id="profile">
+
     <div class="section__pic-container">
         <img src="./assets/me.jpg" alt="">
     </div>
@@ -55,10 +49,10 @@
         </div>
 
         <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="آدرس لینکدین من" class="icon" onclick="location.href='https://linkdin.com'">
-            <img src="./assets/github.png" alt="آدرس گیت هاب من" class="icon" onclick="location.href='https://github.com/hadi-fakhimi'">
-            <img src="./assets/logo-instagram-2443.png" alt="آدرس اینستاگرام من" class="icon" onclick="location.href='Https://instagram.com/hadifakhimi.hf'">
-            <img src="./assets/telegram-png-21801.png" alt="آیدی تلگرام من" class="icon" onclick="location.href='Https://t.me/@Hadifakhimi79'">
+            <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png" src-dark="./assets/linkedin_dark.png"  alt="linkedin Address" class="icon" onclick="location.href='https://linkedin.com'">
+            <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png" alt="github Address" class="icon" onclick="location.href='https://github.com/hadi-fakhimi'">
+            <img src="./assets/logo-instagram-2443.png" src-light="./assets/logo-instagram-2443.png" src-dark="./assets/logo-instagram-2443.png" alt="instagram Address" class="icon" onclick="location.href='Https://instagram.com/hadifakhimi.hf'">
+            <img src="./assets/telegram-png-21801.png" src-light="./assets/telegram-png-21801.png" src-dark="./assets/telegram-png-21801.png" alt="telegram ID" class="icon" onclick="location.href='Https://t.me/@Hadifakhimi79'">
 
         </div>
     </div>
@@ -69,18 +63,18 @@
     <div class="section-container">
 
         <div class="section__pic-container-about">
-            <img class="about-pic" src="./assets/about.jpg" alt="پروفایل">
+            <img class="about-pic" src="./assets/about.jpg" alt="profile">
         </div>
         <div class="abuot-details-container">
 
             <div class="about-containers">
                 <div class="details-container">
-                    <img src="./assets/experience.png" alt="تجربه" class="icon">
+                    <img src="./assets/experience_light.png" src-light="./assets/experience_light.png" src-dark="./assets/experience_dark.png" alt="experience" class="icon">
                     <h3>تجربه</h3>
                     <p>+2 years<br>Full Stack Development</p>
                 </div>
                 <div class="details-container">
-                    <img src="./assets/education.png" alt="تحصیلات" class="icon">
+                    <img src="./assets/education_light.png" src-light="./assets/education_light.png" src-dark="./assets/education_dark.png" alt="education" class="icon">
                     <h3>تحصیلات</h3>
                     <p>فوق دیپلم <br>مهندسی عمران</p>
                    <br>
@@ -95,7 +89,7 @@
             </div>
         </div>
     </div>
-    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#experience'">
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#experience'">
 </section>
 <section id="experience">
     <p class="section__text__p1">...از تجربه هام بهتون بگم</p>
@@ -106,42 +100,42 @@
                 <h2 class="experience-sub-title">Frontend Development</h2>
                 <div  class="article-container">
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>HTML 5</h3>
                             <p>حرفه ای</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Css 3</h3>
                             <p>پیشرفته</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Java Script</h3>
                             <p>پیشرفته</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Type Script</h3>
                             <p>مقدماتی</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Bootstrap</h3>
                             <p>متوسط</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>JQuery</h3>
                             <p>متوسط</p>
@@ -153,42 +147,42 @@
                 <h2 class="experience-sub-title">Backend Development</h2>
                 <div class="article-container">
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>CSharp</h3>
                             <p>حرفه ای</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Asp.NetCore</h3>
                             <p>پیشرفته</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Asp.Net MVC</h3>
                             <p>پیشرفته</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>SQL Server</h3>
                             <p>متوسط</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>UWP</h3>
                             <p>متوسط</p>
                         </div>
                     </article>
                     <article>
-                        <img class="icon" src="./assets/checkmark.png" alt="Experience icon">
+                        <img class="icon" src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png" src-dark="./assets/checkmark_dark.png" alt="Experience icon">
                         <div>
                             <h3>Git and Github</h3>
                             <p>متوسط</p>
@@ -198,7 +192,7 @@
             </div>
         </div>
     </div>
-    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#projects'">
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#projects'">
 </section>
 <section id="projects">
     <p class="section__text__p1">کار های اخیر من</p>
@@ -207,7 +201,7 @@
         <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-1.jpg" alt="project-1" class="project-img">
+                    <img src="./assets/project-1.svg" alt="project-1" class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">ASP.Net Core-Web</h2>
                 <div class="btn-container">
@@ -218,7 +212,7 @@
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-2.jpg" alt="project-1" class="project-img">
+                    <img src="./assets/project-2.svg" alt="project-1" class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">Resume-html-css</h2>
                 <div class="btn-container">
@@ -241,18 +235,18 @@
         </div>
         
     </div>
-    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#contact'">
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png" alt="arrow icon" class="icon arrow" onclick="location.href ='./#contact'">
 </section>
 <section id="contact">
     <p class="section__text__p1">نظراتون برام ارزشمنده</p>
     <h1 class="title">تماس با من</h1>
     <div class="contact-info-upper-container">
         <div class="contact-info-container">
-            <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
+            <img src="./assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png" alt="email icon" class="icon contact-icon">
             <p><a href="mailto:example@gimail.com"></a>Hadi.Fakhimi13@gmail.com</p>
         </div>
         <div class="contact-info-container">
-            <img src="./assets/telegram-png-21801.png" alt="email icon" class="icon contact-icon">
+            <img src="./assets/telegram-png-21801.png" src-light="./assets/telegram-png-21801.png" src-dark="./assets/telegram-png-21801.png" alt="telegram icon" class="icon contact-icon">
             <p><a href="Https://t.me/@Hadifakhimi79"></a>@HadiFakhimi</p>
         </div>
     </div>

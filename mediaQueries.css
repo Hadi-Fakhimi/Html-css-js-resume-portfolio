@@ -60,11 +60,54 @@
 }
 @media screen and (max-width: 991px){
 
-    #desktop-nav{
-        display: none;
+    #menu-icon{
+        display: block;
     }
-    #hamburger-nav{
-        display: flex;
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: rgb(197, 197, 197);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        transition: .25s ease;
+        transition-delay: .25s;
+        z-index: 1;
+
+    }
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+    .navbar .active-nav{
+        position: absolute;
+        top: 0;
+        right:100%;
+        width: 100%;
+        height: 100%;
+        background:rgb(136, 134, 134);
+        border: .1rem solid rgba(0, 0, 0, 0.2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    .navbar.active .active-nav{
+        left: 0;
+        transition-delay: .25s;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1rem;
+        margin: 2rem 0;
+        transform: translateX(-20rem);
+        transition: 0.25s ease;
+        transition-delay: 0s;
+    }
+    .navbar.active a{
+        text-align: right;
+        transform: translateX(0);
+        transition-delay: .25s;
     }
     footer{
         padding: 2rem 4%;
@@ -73,6 +116,18 @@
 }
 @media screen and (max-width: 580px){
 
+    .navbar a{
+
+        margin: 0.9rem 0;
+        
+    }
+    #menu-icon{
+        font-size: 1.8rem;
+    }
+    .header{
+        padding: 1.5rem 5%;
+        height: 7vh;
+    }
     .about-containers{
         flex-wrap: wrap;
         flex-direction: column;
@@ -81,10 +136,13 @@
 
         align-items: center;
         justify-content: center;
+        height: 250px;
+        width: 250px;
+        margin-top: 1.5rem;
 
     }
     #contact{
-        height: 60vh;
+        height: 70vh;
     }
      footer{
         height: 25vh;
@@ -94,7 +152,7 @@
         text-align: justify;
     }
     #profile{
-        height: 83vh;
+        height: 85vh;
         margin-bottom: 1rem;
 
     }
@@ -116,13 +174,13 @@
         font-size: 1.25rem;
     }
     .logo{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
     .section__pic-container{
 
         width: auto;
-        height: 55vw;
+        height: 70vw;
         justify-content: center;
     }
     .section__text__p2{
